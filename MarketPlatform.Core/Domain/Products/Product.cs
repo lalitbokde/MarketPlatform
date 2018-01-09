@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketPlatform.Core.Domain
+namespace MarketPlatform.Core.Domain.Products
 {
-    public class Products
+    public class Product
     {
         public int Id { get; set; }
 

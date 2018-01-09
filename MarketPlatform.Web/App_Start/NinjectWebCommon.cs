@@ -14,6 +14,7 @@ namespace MarketPlatform.Web.App_Start
     using Ninject.Web.Common;
     using Ninject.Web.Common.WebHost;
     using MarketPlatform.Services.Common;
+    using MarketPlatform.Services.Products;
 
     public static class NinjectWebCommon
     {
@@ -67,7 +68,7 @@ namespace MarketPlatform.Web.App_Start
         {
             kernel.Bind<IDbContext>().To<MarketPlatformDbContext>().InRequestScope();
             kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InRequestScope();
-          //  kernel.Bind<IRegistrationService>().To<RegistrationService>();
+            kernel.Bind<IProductsService>().To<ProductsService>();
         }
     }
 }
