@@ -1,0 +1,10 @@
+E:\Marketplace\MarketPlatform\MarketPlatform.Core\bin\Debug\MarketPlatform.Core.dll
+E:\Marketplace\MarketPlatform\MarketPlatform.Core\bin\Debug\MarketPlatform.Core.pdb
+E:\Marketplace\MarketPlatform\MarketPlatform.Core\obj\Debug\MarketPlatform.Core.csproj.CoreCompileInputs.cache
+E:\Marketplace\MarketPlatform\MarketPlatform.Core\obj\Debug\MarketPlatform.Core.dll
+E:\Marketplace\MarketPlatform\MarketPlatform.Core\obj\Debug\MarketPlatform.Core.pdb
+C:\Users\TheThiinker\Source\Repos\MarketPlatform\MarketPlatform.Core\bin\Debug\MarketPlatform.Core.dll
+C:\Users\TheThiinker\Source\Repos\MarketPlatform\MarketPlatform.Core\bin\Debug\MarketPlatform.Core.pdb
+C:\Users\TheThiinker\Source\Repos\MarketPlatform\MarketPlatform.Core\obj\Debug\MarketPlatform.Core.csproj.CoreCompileInputs.cache
+C:\Users\TheThiinker\Source\Repos\MarketPlatform\MarketPlatform.Core\obj\Debug\MarketPlatform.Core.dll
+C:\Users\TheThiinker\Source\Repos\MarketPlatform\MarketPlatform.Core\obj\Debug\MarketPlatform.Core.pdb
