@@ -1,5 +1,6 @@
 ﻿using MarketPlatform.Core.Domain.Products;
 using MarketPlatform.Services.Common;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace MarketPlatform.Services.Products
@@ -17,9 +18,9 @@ namespace MarketPlatform.Services.Products
             _RegistrationRepository.Insert(Registration);
         }
 
-        public Product getProduct()
+        public List<Product> getAllProducts()
         {
-            return _RegistrationRepository.Table.FirstOrDefault();
+            return _RegistrationRepository.Table.ToList();
         }
 
         public void updateProduct(Product model)

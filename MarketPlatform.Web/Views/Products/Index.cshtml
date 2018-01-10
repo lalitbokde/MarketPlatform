@@ -1,0 +1,181 @@
+﻿@model IEnumerable<MarketPlatform.Core.Domain.Products.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Products
+        @*<small>advanced tables</small>*@
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Products</a></li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    @*<h3 class="box-title">   </h3>*@
+                    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-info pull-right" })
+
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="DataTable" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Name)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ShortDescription)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.FullDescription)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.VendorId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Sku)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ManufacturerPartNumber)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.UPC)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Gtin)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.UseMultipleWarehouses)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.WarehouseId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.StockQuantity)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Price)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ProductCost)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Deleted)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CreatedOnUtc)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.UpdatedOnUtc)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AmazonSKU)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.WalmartSKU)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.NeweggSKU)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Description)
+                                </th>
+                                <th></th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ShortDescription)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FullDescription)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.VendorId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Sku)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ManufacturerPartNumber)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UPC)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Gtin)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UseMultipleWarehouses)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.WarehouseId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.StockQuantity)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Price)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProductCost)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Deleted)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CreatedOnUtc)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UpdatedOnUtc)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AmazonSKU)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.WalmartSKU)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NeweggSKU)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Description)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) 
+                                        @*@Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+
+
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

@@ -1,4 +1,5 @@
 ﻿using MarketPlatform.Core.Domain.Products;
+using System.Collections.Generic;
 
 namespace MarketPlatform.Services.Products
 {
@@ -6,7 +7,7 @@ namespace MarketPlatform.Services.Products
     {
         void insertProduct(Product modelProduct);
 
-        Product getProduct();
+        List<Product> getAllProducts();
 
         void updateProduct(Product model);
     }

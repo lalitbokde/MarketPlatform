@@ -72,6 +72,10 @@
     <Compile Include="Migrations\201801091251428_CheckFirstMigration.Designer.cs">
       <DependentUpon>201801091251428_CheckFirstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801101035294_producttablechanges.cs" />
+    <Compile Include="Migrations\201801101035294_producttablechanges.Designer.cs">
+      <DependentUpon>201801101035294_producttablechanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -88,6 +92,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201801091251428_CheckFirstMigration.resx">
       <DependentUpon>201801091251428_CheckFirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801101035294_producttablechanges.resx">
+      <DependentUpon>201801101035294_producttablechanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
